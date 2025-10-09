@@ -143,9 +143,14 @@
        padding: 20px;
        margin-bottom: 20px;
    }
-
    .lefthero {
        width: 45%;
+   }
+   .lefthero h3{
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--bgline)
    }
 
    .lefthero h1 {
@@ -226,13 +231,12 @@
 
    .about {
        text-align: center;
-       /* font-weight: bold; */
-       /* font-family: "Style Script", cursive; */
        font-family: "Nunito", sans-serif;
    }
 
    .about p {
        margin-top: 20px;
+       font-size: 18px;
        font-family: "Style Script", cursive;
    }
 

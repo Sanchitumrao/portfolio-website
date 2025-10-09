@@ -1,12 +1,24 @@
   var typed = new Typed("#speedtext", {
-    strings: ["Web Developer", "UI Designer", "Problem Solver", "Freelancer"],
+    strings: ["Web Developer.", "Python Developer.", "Problem Solver.", "Freelancer."],
     typeSpeed: 100,      // typing speed in ms
     backSpeed: 60,       // backspacing speed
     backDelay: 1500,     // pause before deleting
     loop: true           // repeat infinitely
   });
-
-
+//   hero btn
+document.querySelector(".herobtn").addEventListener("click", function() {
+  document.querySelector(".contact").scrollIntoView({ behavior: "smooth" });
+});
+// smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
+// mobile menu toggle
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
@@ -22,13 +34,13 @@ menuToggle.addEventListener("click", () => {
 });
 const headings = document.querySelectorAll('section h2');
 
-// Create observer
+// Create observer underline animation
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('animate-line');
         } else {
-            entry.target.classList.remove('animate-line'); // optional (if you want it to reset)
+            entry.target.classList.remove('animate-line'); 
         }
     });
 }, { threshold: 0.5 }); // triggers when 50% of heading is visible
@@ -37,7 +49,7 @@ const observer = new IntersectionObserver((entries) => {
 headings.forEach(h2 => observer.observe(h2));
 
 
-
+// array of Skills data
 
 const skills = [
     { name: "HTML", level: "Advanced", icon: "Assets/html.png" },
@@ -61,13 +73,13 @@ skills.forEach(skill => {
     skillContainer.appendChild(card);
 });
 
-
+// array of education data
 const educationData = [
     {
         degree: "Bachelor of Computer Application",
         institution: "CSJMU Kanpur Nagar",
         year: "2024 - 2027",
-        details: "Specialized in Computer Science and Engineering."
+        details: "Computer Science and Engineering."
     },
     {
         degree: "High School & Intermediate ",
@@ -90,15 +102,15 @@ educationData.forEach((edu) => {
   `;
 
     edContainer.appendChild(card);
-});
+})
 // Array of project data
 const projects = [
     {
         title: "3 in 1 Calculator",
-        description: "A web app that converts currencies in real time using API data.",
+        description: "A web app that includes a basic calculator, a currency converter (connected to an API for up to date exchange rates), and a BMI calculator.",
         image: "Assets/calc.png",
         link: "https://calculator-nine-alpha-52.vercel.app",
-        github: "abc",
+        github: "https://github.com/Sanchitumrao/Calculator",
     }
 
 ];
@@ -184,3 +196,6 @@ contactForm.addEventListener("submit", function (e) {
             isSending = false;
         });
 });
+
+// display current year
+document.getElementById("year").textContent = new Date().getFullYear();
