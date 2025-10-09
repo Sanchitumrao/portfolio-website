@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanchit Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Sanchit Patel</div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contactform">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="herosection">
+            <div class="lefthero">
+                <h1>Sanchit Patel</h1>
+                <p>Hi, I am Sanchit Umrao. I am a passionate <span id="speedtext"></span></p>
+                
+                <button class="herobtn"> Get in Touch <strong>&rarr;</strong></button>
+            </div>
+            <div class="righthero">
+                <img src="Assets/img.png" alt="Hero Image">
+
+            </div>
+
+
+        </section>
+        <section class="about" id="about">
+            <h1>About me</h1>
+            <p>Hi, I am Sanchit Umrao. I am a passionate web developer. I want to explore more about web development.
+            </p>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <div class="skill-container" id="skillContainer">
+            </div>
+
+
+        </section>
+        <section class="education" id="education">
+            <h2>Education</h2>
+            <div id="ed-container"></div>
+
+
+        </section>
+        <section class="projects" id="projects">
+            <h2>My Projects</h2>
+            <div id="projects-container"></div>
+
+
+        </section>
+        <section class="contact" id="contactform">
+            <h2>Get In Touch </h2>
+            <p>I'd love to hear from you! Whether you have a question, want to collaborate, or just want to connect,
+                feel free to reach out</p>
+            <form class="ContactForm" id="contactForm">
+                <div>
+
+                    <input type="text" placeholder="Your Name" id="name" name="name" required>
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder="Your Email" name="email" required>
+                </div>
+                <div>
+                    <input type="tel" id="contactno" placeholder="Your Contact " name="contact" required>
+                </div>
+                <div>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="2"
+                        required></textarea><br><br>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <br>
+        <div class="footer-icons">
+            <img src="Assets/call.png">
+            <img src="Assets/mail.png">
+            <img src="Assets/linkdin.png">
+            <img src="Assets/insta.png">
+            <img src="Assets/github.svg">
+        </div>
+
+        <div class="footpara">
+            <p><i>&copy; All rights reserved by <b>Sanchit Patel</b></i></p>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
