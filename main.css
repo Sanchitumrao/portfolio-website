@@ -261,7 +261,7 @@
    }
 
    .skill-card {
-       background: #f0f8ff;
+       background-color: var(--card, #fff);
        border-radius: 12px;
        box-shadow: var(--boxshadow);
        padding: 1rem;
@@ -466,7 +466,6 @@
        bottom: -6px;
        left: 0;
        width: 100%;
-       /* max-width: 250px; */
        height: 5px;
        background-color: var(--bgline);
        transform: scaleX(0);
