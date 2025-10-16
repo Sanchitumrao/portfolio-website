@@ -196,8 +196,8 @@
    .righthero img {
        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
        width: 100%;
-       max-width: 300px;
-       height: auto;
+       max-width: 320px;
+       height: 340px;
        object-fit: cover;
        border-radius: 50%;
        transition: transform 0.3s ease, box-shadow 0.3s ease;
