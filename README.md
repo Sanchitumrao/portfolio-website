@@ -38,7 +38,7 @@ It’s built using modern web technologies with a focus on **performance, simpli
 - ⚡ **Fast Loading Speed**
 - 📬 **Functional Contact Form** (via EmailJS)
 - 💼 **Project Showcase Section**
-- 
+
 ## 🧑‍💻 How to Use Locally
 1. **Clone the repository**
    ```
@@ -49,7 +49,7 @@ It’s built using modern web technologies with a focus on **performance, simpli
    cd portfolio-website
  
 ## 📄 License
-This project is open source and available under the [MIT License↗️](./LICENSE).
+This project is open source and available under the [MIT License](./LICENSE)
 
 ## 👨‍💻 Author
  Developed with ❤️ by *Sanchit Umrao*  
