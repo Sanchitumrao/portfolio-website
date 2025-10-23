@@ -1,4 +1,4 @@
-# 🌐 Sanchit Umrao — Portfolio Website
+# 🌐 Portfolio Website
 
 Welcome to the repository of my **personal portfolio website**!  
 This website showcases my **skills, projects, and education** 
