@@ -11,7 +11,7 @@ It’s built using modern web technologies with a focus on **performance, simpli
 
 ---
 ## 📸 Screenshots
-<img src="img1.jpg" height=350px>b <img src="img2.jpg" height=350px>
+<img src="img1.jpg" height=350px> <img src="img2.jpg" height=350px>
 ## 🛠️ Tech Stack
 
 | Category | Technology |
